@@ -1,15 +1,13 @@
 {
   "name": "strider-email-notifier",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Enables strider to email notifications based on certain events",
   "main": "webapp.js",
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint .",
     "test-only": "./node_modules/.bin/_mocha -- -R spec",
-    "pretest": "npm run-script lint",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
     "posttest": "./node_modules/.bin/istanbul check-coverage",
     "prepublish": "npm test && npm prune"

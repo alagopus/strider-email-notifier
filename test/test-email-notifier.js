@@ -10,7 +10,7 @@ describe('Email Notifier', function () {
       { Job:
         { find: function (a, b, c, callback) {
             callback(null, jobs)
-          }
+          },
         }
       , User: { collaborators: function (a, callback) { callback(null, collaborators) } }
       }
@@ -35,6 +35,10 @@ describe('Email Notifier', function () {
     , finished: new Date()
     , created: new Date()
     , std: { merged: '' }
+    , trigger: {
+        type: 'hook'
+      , message: 'test message'
+      }
     }
   }
 
