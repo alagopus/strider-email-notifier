@@ -7,9 +7,9 @@
     "registry": "http://registry.npmjs.org"
   },
   "scripts": {
-    "test-only": "./node_modules/.bin/_mocha -- -R spec",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
-    "posttest": "./node_modules/.bin/istanbul check-coverage",
+    "test-only": "mocha -R spec",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "posttest": "istanbul check-coverage",
     "prepublish": "npm test && npm prune"
   },
   "repository": {
