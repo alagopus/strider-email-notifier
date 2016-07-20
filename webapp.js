@@ -13,16 +13,16 @@ module.exports = {
   // global events
   listen: function (io, context) {
     io.on('plugin.emailNotifier.send', function (jobId, pluginConfig) {
-      var onDoneAndSaved = function (job) {
+      function onDoneAndSaved(job) {
         if (job._id.toString() === jobId.toString()) {
           context.pluginConfig = pluginConfig;
           context.createMailer = createMailer;
-          
+
           io.removeListener('job.doneAndSaved', onDoneAndSaved);
           jobHandler(job, context);
         }
-      };
-      
+      }
+
       io.on('job.doneAndSaved', onDoneAndSaved);
     });
   }
