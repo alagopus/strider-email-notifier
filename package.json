@@ -46,7 +46,6 @@
   },
   "dependencies": {
     "async": "~0.2.9",
-    "jade": "~0.35.0",
     "moment": "~2.4.0",
     "pug": "^2.0.0-beta4",
     "strider-mailer": "^0.2",
