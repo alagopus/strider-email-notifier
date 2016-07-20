@@ -21,8 +21,11 @@
     "email",
     "plugin"
   ],
+  "engines": {
+    "node": ">=4.2"
+  },
   "author": "Adam Duncan <adam.jd@gmail.com>",
-  "license": "BSD",
+  "license": "MIT",
   "strider": {
     "type": "job",
     "id": "emailnotifier",
