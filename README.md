@@ -1,4 +1,5 @@
 # strider-email-notifier
+[![Build Status](https://travis-ci.org/Strider-CD/strider-email-notifier.svg?branch=master)](https://travis-ci.org/Strider-CD/strider-email-notifier)
 
 This plugin enables email notifications to be sent on build success or failure.
 
