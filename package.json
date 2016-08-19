@@ -1,7 +1,7 @@
 {
   "name": "strider-email-notifier",
   "version": "0.4.6",
-  "description": "Enables strider to email notifications based on certain events",
+  "description": "Enables Strider to email notifications based on certain events",
   "main": "webapp.js",
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
@@ -39,16 +39,16 @@
     "icon": "icon.png"
   },
   "devDependencies": {
-    "eslint": "^3.1.1",
-    "expect.js": "~0.2.0",
-    "istanbul": "~0.2.0",
-    "mocha": "~1.13.0"
+    "eslint": "^3.3.1",
+    "expect.js": "~0.3.1",
+    "istanbul": "~0.4.4",
+    "mocha": "~3.0.2"
   },
   "dependencies": {
-    "async": "~0.2.9",
-    "moment": "~2.4.0",
+    "async": "~2.0.1",
+    "lodash": "~4.15.0",
+    "moment": "~2.14.1",
     "pug": "^2.0.0-beta4",
-    "strider-mailer": "^0.2",
-    "underscore": "~1.5.2"
+    "strider-mailer": "^0.2"
   }
 }
