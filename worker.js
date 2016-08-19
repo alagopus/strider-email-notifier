@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   init: function (config, job, context, callback) {
     return callback(null, {
