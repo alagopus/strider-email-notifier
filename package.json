@@ -49,6 +49,6 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "pug": "^2.0.0-beta6",
-    "strider-mailer": "*"
+    "strider-mailer": "git+https://github.com/alagopus/strider-mailer.git#develop"
   }
 }

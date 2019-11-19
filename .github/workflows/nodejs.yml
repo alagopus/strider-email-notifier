@@ -27,9 +27,8 @@ jobs:
       run: |
         rm -rf node_modules
         npm install
-    - name: npm test and posttest
+    - name: npm test
       run: |
         npm run test
-        npm run posttest
       env:
         CI: true
